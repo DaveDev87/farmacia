@@ -1,19 +1,17 @@
 import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./styles/App.css";
+import { Container, Row, Col } from "react-grid-system";
 //Views
 import Home from "./views/Home";
 
 //Components
-import Header from "./components/Header";
 
 
 function App() {
   return (
-    <div className="container">
+    <div>
       <Router>
         <>
-          <Header />
           <Switch>
             <Route exact path="/" component={Home} />
           </Switch>

@@ -6,10 +6,12 @@ body, html {
 
 .container {
     /* height: 100%; */
-    background-image: url("https://cdn.pixabay.com/photo/2018/10/19/08/30/about-3758125_1280.jpg");
+    background-image: url("https://www.am-lab.it/wp-content/uploads/2017/12/12_AMlab_FARMACIA_CENTRALE_SITE.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    filter: blur(15px);
+    filter: brightness(1.2);
 }
