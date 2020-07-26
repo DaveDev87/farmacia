@@ -1,6 +1,8 @@
-import React, { Component, createRef } from "react";
-import { Container, Row, Col } from "react-grid-system";
-import Portada from "../assets/medicine.svg";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import LANDING_1 from "../assets/medicine.svg";
+import LANDING_2 from "../assets/doctors.svg";
+import LANDING_3 from "../assets/conference.svg";
 import "../styles/header.css";
 
 export default class Home extends Component {
@@ -29,19 +31,47 @@ export default class Home extends Component {
     return (
       <div>
         <div className={this.state.style}>
-          <h2>Farmacia</h2>
+          <div style={{ cursor: "pointer", width: "1em" }}>
+            <h2>Farmacia</h2>
+          </div>
         </div>
-
         <div className="container content">
           <div className="row">
-            <div className="col">
-              <img src={Portada} height="500" width="500" alt="simon"></img>
+            <div className="col-sm">
+              <img src={LANDING_1} height="500" width="500" alt="simon"></img>
             </div>
-            <div className="col">
-              <h1 className="display-2">Improving your business or some shit</h1>
-              <button class="btn btn-primary" type="submit">Sign in</button>
-              <button type="button" class="btn btn-outline-primary">Sign up</button>
-
+            <div className="col-sm">
+              <h1 className="display-2">
+                Improving your business or some shit
+              </h1>
+              <div className="group-buttons">
+                <div>
+                  <Link to="/login" className="button-1">
+                    Login
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/signin" className="button-2">
+                    Sign up
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm">
+              <h2 className="display-2">Only what you need</h2>
+            </div>
+            <div className="col-sm">
+              <img src={LANDING_2} height="500" width="500" alt="simon"></img>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm">
+              <img src={LANDING_3} height="500" width="500" alt="simon"></img>
+            </div>
+            <div className="col-sm">
+              <h2 className="display-2">Lorem Ipsum</h2>
             </div>
           </div>
         </div>
