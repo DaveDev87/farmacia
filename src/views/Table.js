@@ -6,28 +6,43 @@ export default class Table extends Component {
     render() {
         return (
             <div>
-                <h1>Crud</h1>
+                <form class="tabler">
+                    <h2>Agregue un producto</h2>
+                    <input required type="text" placeholder="Medicamento"></input>
+                    <br></br>
+                    <input type="text" placeholder="Image"></input>
+                    <br></br>
+                    <input required type="text" placeholder="Descripción"></input>
+                    <br></br>
+                    <input required type="text" placeholder="Dosis"></input>
+                    <br></br>
+                    <button>Agregar</button>
+                </form>
                 <table class="tabler">
                     <tbody>
                     <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Savings</th>
+                    <th>Medicamento</th>
+                    <th>Imagen</th>
+                    <th>Descripcion</th>
+                    <th>Dosis</th>
                     </tr>
                     <tr>
-                        <td>Peter</td>
-                        <td>Griffin</td>
-                        <td>$100</td>
+                        <td>Nitrato de Mitrozon</td>
+                        <td>url</td>
+                        <td>descripcion</td>
+                        <td>50mg</td>
                     </tr>
                     <tr>
-                        <td>Lois</td>
-                        <td>Griffin</td>
-                        <td>$150</td>
+                        <td>Crotolamo</td>
+                        <td>url</td>
+                        <td>descripcion</td>
+                        <td>50mg</td>
                     </tr>
                     <tr>
-                        <td>Joe</td>
-                        <td>Swanson</td>
-                        <td>$300</td>
+                        <td>Pendijotromicina</td>
+                        <td>url</td>
+                        <td>descripcion</td>
+                        <td>50mg</td>
                     </tr>
                     </tbody>
                     </table>
