@@ -1,11 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import CardLogin from "../components/CardLogin";
+import "../styles/login.css";
 
 export default class Login extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Login</h1>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div className="center">
+        <div className="login-component">
+          <CardLogin />
+        </div>
+      </div>
+    );
+  }
 }

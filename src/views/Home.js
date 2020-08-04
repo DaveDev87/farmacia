@@ -9,7 +9,7 @@ export default class Home extends Component {
   constructor() {
     super();
     this.state = {
-      style: "header",
+      style: false,
     };
   }
 
@@ -21,16 +21,18 @@ export default class Home extends Component {
   }
   handleSchroll() {
     if (window.scrollY > 5) {
-      this.setState({ style: "header sticky" });
+      this.setState({ style: true });
     } else {
-      this.setState({ style: "header" });
+      this.setState({ style: false });
     }
   }
 
   render() {
+    let navbar = 'header';
+    if (this.state.style===true) navbar+=' sticky';
     return (
       <div>
-        <div className={this.state.style}>
+        <div className={navbar}>
           <div style={{ cursor: "pointer", width: "1em" }}>
             <h2>Farmacia</h2>
           </div>
