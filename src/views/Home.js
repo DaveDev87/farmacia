@@ -57,6 +57,11 @@ export default class Home extends Component {
                     Sign up
                   </Link>
                 </div>
+                <div>
+                  <Link to="/table" className="button-2">
+                    Table
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
